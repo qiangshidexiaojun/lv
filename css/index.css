@@ -1,0 +1,298 @@
+@media only screen and (max-width: 1080px), only screen and (max-device-width: 1080px) {
+  html,
+  body {
+    font-size: 168.75px;
+  }
+}
+@media only screen and (max-width: 960px), only screen and (max-device-width: 960px) {
+  html,
+  body {
+    font-size: 150px;
+  }
+}
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
+  html,
+  body {
+    font-size: 125px;
+  }
+}
+@media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
+  html,
+  body {
+    font-size: 112.5px;
+  }
+}
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+  html,
+  body {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
+  html,
+  body {
+    font-size: 93.75px;
+  }
+}
+@media only screen and (max-width: 540px), only screen and (max-device-width: 540px) {
+  html,
+  body {
+    font-size: 84.375px;
+  }
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  html,
+  body {
+    font-size: 75px;
+  }
+}
+@media only screen and (max-width: 414px), only screen and (max-device-width: 414px) {
+  html,
+  body {
+    font-size: 64.6875px;
+  }
+}
+@media only screen and (max-width: 400px), only screen and (max-device-width: 400px) {
+  html,
+  body {
+    font-size: 62.5px;
+  }
+}
+@media only screen and (max-width: 375px), only screen and (max-device-width: 375px) {
+  html,
+  body {
+    font-size: 58.59375px;
+  }
+}
+@media only screen and (max-width: 360px), only screen and (max-device-width: 360px) {
+  html,
+  body {
+    font-size: 56.25px;
+  }
+}
+@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
+  html,
+  body {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 240px), only screen and (max-device-width: 240px) {
+  html,
+  body {
+    font-size: 37.5px;
+  }
+}
+/* #region 默认样式*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/* #endregion */
+body {
+  background: #f1f1f1;
+}
+/* 旅游网站视窗 */
+/*头部  */
+.lv_header {
+  height: 0.44rem;
+  text-align: center;
+  line-height: .44rem;
+}
+.lv_header .header_left {
+  float: left;
+  font-size: .14rem;
+  width: 10%;
+}
+.lv_header .header_center {
+  font-size: .16rem;
+  width: 80%;
+  float: left;
+  font-weight: normal;
+}
+.lv_header .header_right {
+  float: right;
+  width: 5%;
+}
+.lv_header .header_right img {
+  width: 0.22rem;
+  margin: .11rem auto;
+}
+/* 轮播图 */
+.lv_carousel {
+  margin-bottom: .05rem;
+}
+.lv_carousel .swiper-pagination {
+  bottom: -0.2rem;
+}
+.lv_carousel .swiper-pagination .swiper-pagination-bullet-active {
+  background: #fff;
+}
+/* 分类区 */
+.lv_category ul li {
+  width: 33.33%;
+  float: left;
+  padding: .05rem;
+}
+/* 导航区 */
+.lv_nav {
+  margin-bottom: .14rem;
+}
+.lv_nav ul {
+  border-bottom: 1px solid #e6e6e6;
+}
+.lv_nav ul li {
+  border-top: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  width: 25%;
+  float: left;
+  padding: .05rem;
+}
+.lv_nav ul li:nth-child(4),
+.lv_nav ul li:nth-child(8) {
+  border-right: none;
+}
+/* 广告区 */
+.lv_ad {
+  margin-bottom: .26rem;
+}
+.lv_ad ul {
+  border-bottom: 1px solid #cdcdcd;
+}
+.lv_ad ul li {
+  float: right;
+  width: 50%;
+  border-right: 1px solid #cdcdcd;
+}
+.lv_ad ul li:first-child {
+  float: left;
+  padding-bottom: .02rem;
+}
+.lv_ad ul li:nth-child(2) {
+  border-right: none;
+  border-bottom: 1px solid #cdcdcd;
+}
+.lv_ad ul li:nth-child(3) {
+  border-right: none;
+}
+/* 热门活动 */
+.lv_hotActive {
+  margin-bottom: .16rem;
+}
+.lv_hotActive h2 {
+  font-size: .14rem;
+  font-weight: normal;
+  line-height: 1;
+  padding: 0 0 .08rem .16rem;
+}
+.lv_hotActive ul {
+  border-top: 1px solid #dddddd;
+}
+.lv_hotActive ul li {
+  border-bottom: 1px solid #dddddd;
+}
+/* banner区 */
+.lv_banner {
+  background: #fff;
+}
+.lv_banner .banner_title ul li {
+  float: left;
+  width: 50%;
+  font-size: .12rem;
+  font-weight: 500;
+}
+.lv_banner .banner_title ul li a {
+  margin: 0 auto;
+  text-align: center;
+  line-height: .44rem;
+  display: block;
+  width: .64rem;
+  height: .44rem;
+}
+.lv_banner .banner_title ul li a:focus {
+  color: #d3079e;
+  border-bottom: 1px solid #d3079e;
+}
+.lv_banner .banner_title ul li.active a {
+  color: #d3079e;
+  border-bottom: 1px solid #d3079e;
+}
+.lv_banner .banner_content {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: .14rem;
+}
+.lv_banner .banner_content p {
+  font-size: .12rem;
+  padding: .02rem;
+}
+.lv_banner .banner_content p:last-child {
+  font-size: .14rem;
+  padding: .05rem 0;
+}
+/*查看更多  */
+.lv_more {
+  text-align: center;
+  background: #fff;
+}
+.lv_more a {
+  height: 0.28rem;
+  display: block;
+  border-bottom: 1px solid #dddddd;
+  font-size: .12rem;
+  line-height: .28rem;
+}
+/* footer区 */
+.lv_footer {
+  background: #d3079e;
+  height: 0.28rem;
+  line-height: .28rem;
+  font-size: .14rem;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+}
+.lv_footer .register {
+  display: block;
+  height: 100%;
+  width: 0.78rem;
+  float: left;
+}
+.lv_footer .login {
+  display: block;
+  height: 100%;
+  width: 0.56rem;
+  float: left;
+}
+.lv_footer .top {
+  display: block;
+  height: 100%;
+  width: 0.56rem;
+  float: right;
+}
+/*# sourceMappingURL=./index.css.map */

@@ -1,0 +1,264 @@
+@import "media.less";
+/* #region 默认样式*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* #endregion */
+
+body {
+    background: #f1f1f1;
+}
+
+
+/* 旅游网站视窗 */
+
+.lv_view {}
+
+
+/*头部  */
+
+.lv_header {
+    height: 0.44rem;
+    text-align: center;
+    line-height: .44rem;
+    .header_left {
+        float: left;
+        font-size: .14rem;
+        width: 10%;
+    }
+    .header_center {
+        font-size: .16rem;
+        width: 80%;
+        float: left;
+        font-weight: normal;
+    }
+    .header_right {
+        float: right;
+        width: 5%;
+        img {
+            width: 0.22rem;
+            margin: .11rem auto;
+        }
+    }
+}
+
+
+/* 轮播图 */
+
+.lv_carousel {
+    margin-bottom: .05rem;
+    .swiper-pagination {
+        bottom: -.2rem;
+        .swiper-pagination-bullet-active{
+            background: #fff;
+        }
+    }
+}
+
+
+/* 分类区 */
+
+.lv_category {
+    ul {
+        li {
+            width: 33.33%;
+            float: left;
+            padding: .05rem;
+        }
+    }
+}
+
+
+/* 导航区 */
+
+.lv_nav {
+    margin-bottom: .14rem;
+    ul {
+        border-bottom: 1px solid #e6e6e6;
+        li {
+            border-top: 1px solid #e6e6e6;
+            border-right: 1px solid #e6e6e6;
+            width: 25%;
+            float: left;
+            padding: .05rem;
+            &:nth-child(4),
+            &:nth-child(8) {
+                border-right: none;
+            }
+        }
+    }
+}
+
+
+/* 广告区 */
+
+.lv_ad {
+    margin-bottom: .26rem;
+    ul {
+        border-bottom: 1px solid #cdcdcd;
+        li {
+            float: right;
+            width: 50%;
+            border-right: 1px solid #cdcdcd;
+            &:first-child {
+                float: left;
+                padding-bottom: .02rem;
+            }
+            &:nth-child(2) {
+                border-right: none;
+                border-bottom: 1px solid #cdcdcd;
+            }
+            &:nth-child(3) {
+                border-right: none;
+            }
+        }
+    }
+}
+
+
+/* 热门活动 */
+
+.lv_hotActive {
+    margin-bottom: .16rem;
+    h2 {
+        font-size: .14rem;
+        font-weight: normal;
+        line-height: 1;
+        padding: 0 0 .08rem .16rem;
+    }
+    ul {
+        border-top: 1px solid #dddddd;
+        li {
+            border-bottom: 1px solid #dddddd;
+        }
+    }
+}
+
+
+/* banner区 */
+
+.lv_banner {
+    background: #fff;
+    .banner_title {
+        ul {
+            li {
+                float: left;
+                width: 50%;
+                font-size: .12rem;
+                font-weight: 500;
+                a {
+                    margin: 0 auto;
+                    text-align: center;
+                    line-height: .44rem;
+                    display: block;
+                    width: .64rem;
+                    height: .44rem;
+                    &:focus {
+                        color: #d3079e;
+                        border-bottom: 1px solid #d3079e;
+                    }
+                }
+            }
+            li.active a {
+                color: #d3079e;
+                border-bottom: 1px solid #d3079e;
+            }
+        }
+    }
+    .banner_content {
+        border-bottom: 1px solid #dddddd;
+        margin-bottom: .14rem;
+        p {
+            font-size: .12rem;
+            padding: .02rem;
+        }
+        p:last-child {
+            font-size: .14rem;
+            padding: .05rem 0;
+        }
+    }
+}
+
+
+/*查看更多  */
+
+.lv_more {
+    text-align: center;
+    background: #fff;
+    a {
+        height: 0.28rem;
+        display: block;
+        border-bottom: 1px solid #dddddd;
+        font-size: .12rem;
+        line-height: .28rem;
+    }
+}
+
+
+/* footer区 */
+
+.lv_footer {
+    background: #d3079e;
+    height: 0.28rem;
+    line-height: .28rem;
+    font-size: .14rem;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    .register {
+        display: block;
+        height: 100%;
+        width: 0.78rem;
+        float: left;
+    }
+    .login {
+        display: block;
+        height: 100%;
+        width: 0.56rem;
+        float: left;
+    }
+    .top {
+        display: block;
+        height: 100%;
+        width: 0.56rem;
+        float: right;
+    }
+}
